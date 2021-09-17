@@ -1,0 +1,25 @@
+{
+  "name": "wheeloffortune",
+  "version": "1.0.0",
+  "description": "Requirments - \r  - Buy vowels\r  - Random spin for how much you get per right letter\r  - label of word type \r  - api to weber or something",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevinFischer32/wheel-of-fortune.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevinFischer32/wheel-of-fortune/issues"
+  },
+  "homepage": "https://github.com/DevinFischer32/wheel-of-fortune#readme"
+}

@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css">
     <title>Wheel of Fortune</title>
 </head>
 <body>
-    <div>
-        <h1>Welcome to Wheel of Fortune</h1>
-        <h3 id="nameFeild"></h3>
+    <section id="startScreen" class="startView">
+        <h1>Wheel of Fortune</h1>
+        <input class="startView" type="submit" value="Start Game">
+    </section>
+    <header>
+            <h1>Welcome to Wheel of Fortune</h1>
+            <form >
+                <input type="text" name="name" id="name" placeholder="Username" autocomplete="off">
+                <button id="userBtn">Set Name</button>
+                <h3 id="nameFeild"></h3>
+            </form>
+    </header>
+
+
+<section id="gameArea">
+
+    <div id="gameBoard">
+        <h1 id="gamePhrase">Gone Fishing</h1>
+        <h1 id="wordType">Verb</h1>
     </div>
-
-    <form action="submit">
-        <input type="text" name="name" id="name" placeholder="Username" autocomplete="off">
-        <button onclick="userName()">Add Name</button>
+    
+    <form>
+        <input maxlength="1" type="text" name="guess" id="playerGuess" placeholder="Guess" autocomplete="off">
+        <input type="submit" id="guessBtn">
     </form>
+</section>
 
+<section>
+    <div id="allGuess"></div>
+    <div id="bankAccount">
+        <h1 id="bank" style="font-size: xx-large">0</h1>
+    </div>
+</section>
 
-
+<select id="vowelSelection">
+    <option value="a">A</option>
+    <option value="e">E</option>
+    <option value="i">I</option>
+    <option value="o">O</option>
+    <option value="u">U</option>
+    <input type="submit" value="Buy A Vowel" id="vowelBuyBtn">
+</select>
 
 <script src="/index.js"></script>
 </body>
 </html>
+
