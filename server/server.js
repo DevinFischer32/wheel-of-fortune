@@ -7,7 +7,9 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'../index.html'))
 })
 
-app.use('/css',express.static(__dirname + '/style.css')); 
+app.use("/css", express.static(path.join(__dirname, "../client/style.css")))
+
+app.use("/js", express.static(path.join(__dirname, "../client/index.js")))
 
 const port = process.env.PORT || 4000
 

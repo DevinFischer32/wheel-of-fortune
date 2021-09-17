@@ -1,10 +1,11 @@
 document.getElementById('userBtn').addEventListener('click', userName) 
 document.getElementById('guessBtn').addEventListener('click', playerGuess)
 // document.getElementById('vowelBuyBtn').addEventListener('click', bankAccount)
+document.getElementById('startBtn').addEventListener('click', startGame)
 const board = document.getElementById('gameBoard')
 
 function startGame(){
-    axios.get()
+    document.getElementsByClassName('startScreen')
 }
 
 
