@@ -1,11 +1,22 @@
+
 document.getElementById('userBtn').addEventListener('click', userName) 
 document.getElementById('guessBtn').addEventListener('click', playerGuess)
 // document.getElementById('vowelBuyBtn').addEventListener('click', bankAccount)
 document.getElementById('startBtn').addEventListener('click', startGame)
 const board = document.getElementById('gameBoard')
 
-function startGame(){
-    document.getElementsByClassName('startScreen')
+const baseUrl = 'https://wheel-0f-fortune.herokuapp.com'
+
+function startGame(e){
+  //removes start screen
+    e.target.parentNode.remove()
+
+    //Need to get word from api
+    axios.get(baseUrl + "/words").then((res)=>{
+        let {gamePhrase, type} = res.data
+        console.log(gamePhrase, type)
+    })
+
 }
 
 
@@ -37,7 +48,8 @@ function playerGuess(e){
     
     //matching for gamePhrase
     let gamePhrase = document.getElementById('gamePhase')
-    console.log(gamePhrase)
+    console.log(typeof gamePhrase)
+
     let bank = Number(bankAccount) //Need to set up buying vowels and adding money when right
     console.log(typeof bank,bank)
     bank = 0
@@ -45,15 +57,8 @@ function playerGuess(e){
     let allow = false //allowing to use a vowel
 
     if(consonants){
-        for(let i = 0;i<playerInput.length;i++){
-           if(playerInput.length * bank > bank){
-               bank += 5
-           }else{
-               return
-           }
-        }
         allGuess.textContent += playerInput + " "
-
+        bank += 250
     }else if(vowels){
         if(allow != false && bank >= 250*vowels.length){
             function buyingVowel(){

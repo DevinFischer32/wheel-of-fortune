@@ -14,7 +14,7 @@
         <input id="startBtn" class="startView" type="submit" value="Start Game">
     </section>
     <header>
-            <h1>Welcome to Wheel of Fortune</h1>
+            <h1>Wheel of Fortune</h1>
             <form >
                 <input type="text" name="name" id="name" placeholder="Username" autocomplete="off">
                 <button id="userBtn">Set Name</button>
@@ -36,22 +36,26 @@
     </form>
 </section>
 
-<section>
-    <div id="allGuess"></div>
+<div id="allGuess"></div>
+
+<section id="bankVowel">
     <div id="bankAccount">
         <h1 id="bank" style="font-size: xx-large">0</h1>
     </div>
+    
+    <div id="vowelArea">
+        <select id="vowelSelection">
+            <option value="a">A</option>
+            <option value="e">E</option>
+            <option value="i">I</option>
+            <option value="o">O</option>
+            <option value="u">U</option>
+            <input type="submit" value="Buy A Vowel" id="vowelBuyBtn">
+        </select>
+    </div>
 </section>
 
-<select id="vowelSelection">
-    <option value="a">A</option>
-    <option value="e">E</option>
-    <option value="i">I</option>
-    <option value="o">O</option>
-    <option value="u">U</option>
-    <input type="submit" value="Buy A Vowel" id="vowelBuyBtn">
-</select>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="/js"></script>
 <script src="/client/index.js"></script>
 </body>
