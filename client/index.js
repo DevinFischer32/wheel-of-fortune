@@ -25,7 +25,7 @@ function startGame(e){
         console.log(gamePhrase.split(''))
         for(let i=0; i<gamePhrase.length;i++){
            let brokenWord = document.createElement('div').addClassList('hidden')
-           brokenWord.appendChild(gamePhrase[i])
+           brokenWord.appendChild(gamePhrase)
            body.appendChild(brokenWord)
            wordType.appendChild(type)
         }
