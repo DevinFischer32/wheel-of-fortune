@@ -28,7 +28,7 @@ function startGame(e){
         for(let i=0; i<gamePhrase.length;i++){
             console.log('for-loop',gamePhrase)
             console.log(i)
-            document.createElement('div').textContent = gamePhrase[i]
+            gameWord.textContent = gamePhrase[i]
 
         }
         return
