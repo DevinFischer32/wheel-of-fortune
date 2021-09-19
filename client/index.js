@@ -28,6 +28,9 @@ function startGame (e){
         gamePhrase = gamePhrase.split('')
         for(let i=0; i<gamePhrase.length;i++){
            console.log('for-loop',gamePhrase[i])
+           let newDiv = document.createElement('div').classList.add('hidden')
+           newDiv.value = gamePhrase[i].value
+           gameWord.appendChild(newDiv)
             // gameWord.textContent += gamePhrase[i]
             gameWord.textContent += gamePhrase[i].value
         }
