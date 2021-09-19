@@ -5,7 +5,7 @@ document.getElementById('startBtn').addEventListener('click', startGame)
 const board = document.getElementById('gameBoard')
 
 //var for word user is guessing
-let gameWord = document.getElementById('gamePhase')
+let gameWord = document.getElementById('wordPhrase')
 let wordType = document.getElementById('wordType')
 console.log(gameWord)
 console.log(typeof gameWord)
@@ -28,6 +28,7 @@ function startGame (e){
         gamePhrase = gamePhrase.split('')
         for(let i=0; i<gamePhrase.length;i++){
             console.log('for-loop',gamePhrase[i])
+            gameWord.textContent += gamePhrase[i]
             // gameWord.textContent += gamePhrase[i].value
         }
     })
