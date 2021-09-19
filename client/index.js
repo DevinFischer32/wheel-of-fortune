@@ -23,7 +23,7 @@ function startGame(e){
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
         for(let i=0; i<gamePhrase.length;i++){
-           gamePhrase.split(' ')
+           gamePhrase = gamePhrase.split(' ')
            console.log("gamePhrase.split(' ')",gamePhrase)
            let brokenWord = document.createElement('div').addClassList('hidden')
            console.log(brokenWord)
