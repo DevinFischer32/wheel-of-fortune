@@ -22,10 +22,10 @@ function startGame(e){
     axios.get(baseUrl + "/words").then((res)=>{
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
-        console.log(gamePhrase.split(''))
         for(let i=0; i<gamePhrase.length;i++){
+           gamePhrase.split(' ')
            let brokenWord = document.createElement('div').addClassList('hidden')
-           brokenWord.appendChild(gamePhrase)
+           brokenWord.appendChild(gamePhrase[i])
            body.appendChild(brokenWord)
            wordType.appendChild(type)
         }
