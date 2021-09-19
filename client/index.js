@@ -23,11 +23,7 @@ function startGame(e){
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
         for(let i=0; i<gamePhrase.length;i++){
-            document.createElement('h6').addClassList('hidden').textContent = gamePhrase[i] 
-            
             console.log(gamePhrase[i])
-
-
         }
         
     })
