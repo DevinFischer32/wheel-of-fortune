@@ -7,6 +7,8 @@ const board = document.getElementById('gameBoard')
 //var for word user is guessing
 let gameWord = document.getElementById('gamePhase')
 let wordType = document.getElementById('wordType')
+console.log(gameWord)
+console.log(typeof gameWord)
 
 
 const baseUrl = 'https://wheel-0f-fortune.herokuapp.com' //for heroku link
