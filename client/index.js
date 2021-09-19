@@ -22,6 +22,7 @@ function startGame(e){
     axios.get(baseUrl + "/words").then((res)=>{
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
+        console.log(gamePhrase.split(''))
         for(let i=0; i<gamePhrase.length;i++){
             console.log(gamePhrase[i])
         }
