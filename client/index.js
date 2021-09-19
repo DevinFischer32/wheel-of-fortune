@@ -1,4 +1,3 @@
-
 document.getElementById('userBtn').addEventListener('click', userName) 
 document.getElementById('guessBtn').addEventListener('click', playerGuess)
 // document.getElementById('vowelBuyBtn').addEventListener('click', bankAccount)
@@ -25,6 +24,8 @@ function startGame(e){
         console.log(gamePhrase, type)
         for(let i=0; i<gamePhrase.length;i++){
             document.createElement('h6').addClassList('hidden').textContent = gamePhrase[i] 
+            
+            console.log(gamePhrase[i])
 
 
         }
