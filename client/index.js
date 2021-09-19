@@ -27,7 +27,6 @@ function startGame (e){
     gamePhrase = gamePhrase.split('')
     for(let i=0; i<gamePhrase.length;i++){
         console.log('for-loop',gamePhrase[i])
-        let wordDiv =document.createElement('div').addClassList('hidden') 
         wordDiv.textContent = gamePhrase[i]
         console.log(wordDiv)   
 
