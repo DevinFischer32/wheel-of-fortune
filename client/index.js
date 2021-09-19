@@ -23,15 +23,12 @@ function startGame(e){
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
         wordType.textContent = type
-        console.log(wordType.textContent)
         gamePhrase = gamePhrase.split('')
         for(let i=0; i<gamePhrase.length;i++){
-            console.log('for-loop',gamePhrase)
-            console.log(i)
-            gameWord.textContent = gamePhrase[i]
+            console.log('for-loop',gamePhrase[i])
+            
 
         }
-        return
     })
 
 }
