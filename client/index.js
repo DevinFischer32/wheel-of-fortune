@@ -27,9 +27,6 @@ function startGame (e){
         for(let i=0; i<gamePhrase.length;i++){
             console.log('for-loop',gamePhrase[i])
             gameWord.textContent = gamePhrase[i]
-            console.log(wordDiv)   
-            
-            board.appendChild(wordDiv)
         }
     })
         
