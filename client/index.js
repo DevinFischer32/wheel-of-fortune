@@ -20,7 +20,7 @@ function startGame(e){
     e.target.parentNode.remove()
 
     //Need to get word from api
-    axios.get(baseUrl + "words").then((res)=>{
+    axios.get(baseUrl + "/words").then((res)=>{
         let {gamePhrase, type} = res.data
         console.log(gamePhrase, type)
         for(let i=0; i<gamePhrase.length;i++){
