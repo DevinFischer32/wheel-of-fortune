@@ -24,12 +24,14 @@ function startGame(e){
         console.log(gamePhrase, type)
         for(let i=0; i<gamePhrase.length;i++){
            gamePhrase.split(' ')
+           console.log("gamePhrase.split(' ')",gamePhrase)
            let brokenWord = document.createElement('div').addClassList('hidden')
+           console.log(brokenWord)
            brokenWord.appendChild(gamePhrase[i])
            body.appendChild(brokenWord)
            wordType.appendChild(type)
         }
-        
+        return
     })
 
 }
