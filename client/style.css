@@ -44,8 +44,8 @@ table {
 }
 /* ------------------------------------------------------------------- */
 #startScreen{
-    height: 98vh;
-    width: 98vw;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     background-color: lightskyblue;
     position: absolute;
@@ -85,26 +85,68 @@ header h3{
     font-size: 1.5em;
 }
 #gameArea{
-    background-color: lightsteelblue;
+    background-color: rgb(5, 79, 177);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    width: 94vw;
 }
 #gameBoard{
-    background-color: lightslategrey;
-    width: 50vw;
-    height: 25vh;
+    background-color: rgb(51, 189, 143);
+    width: 90%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#allGuess{
-    background-color: coral;
-    width: 20vw;
-    height: 20vh;
-    margin: auto;
-    text-align: center;
+
+#wordPhrase{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.gameCard{
+    height: 4rem;
+    width: 3.5rem;
+    border: .2rem solid black;
+    background-color: blanchedalmond;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+
+
+#keyboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #018c70;
+    padding: 1rem;
+}
+
+.alpha{
+    display: flex;
+    justify-content: center;
+}
+.alphabet{
+    margin: .5rem;
+    height: 4rem;
+    width: 3.5rem;
+    font-size: 2em;
+    background-color: #eae2f0;
+    border: .3rem solid black;
+}
+.vowel{
+    background-color: yellow;
+}
+.hidden{
+    background-color: #eae2f0;
+    border: .3rem solid black;
+    color: #eae2f0;
 }

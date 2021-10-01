@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css" />
     <!-- <link rel="stylesheet" href="/client/style.css"> -->
     <title>Wheel of Fortune</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="startScreen" class="startView">
-        <h1>Wheel of Fortune</h1>
-        <input id="startBtn" class="startView" type="submit" value="Start Game">
+      <h1>Wheel of Fortune</h1>
+      <input id="startBtn" class="startView" type="submit" value="Start Game" />
     </section>
     <header>
-            <h1>Wheel of Fortune</h1>
-            <form >
-                <input type="text" name="name" id="name" placeholder="Username" autocomplete="off">
-                <button id="userBtn">Set Name</button>
-                <h3 id="nameFeild"></h3>
-            </form>
+      <h1>Wheel of Fortune</h1>
+      <form>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Username"
+          autocomplete="off"
+        />
+        <button id="userBtn">Set Name</button>
+        <h3 id="nameFeild"></h3>
+      </form>
     </header>
 
-
-<section id="gameArea">
-
-    <div id="gameBoard">
+    <section id="gameArea">
+      <div id="gameBoard">
         <div id="wordPhrase"></div>
         <div id="wordType"></div>
-    </div>
-    
-    <form>
-        <input maxlength="1" type="text" name="guess" id="playerGuess" placeholder="Guess" autocomplete="off">
-        <input type="submit" id="guessBtn">
-    </form>
-</section>
+      </div>
+    </section>
 
-<div id="allGuess"></div>
+    <section id="keyboard">
+      <section class="alpha">
+        <button value="A" class="alphabet vowel">A</button>
+        <button value="B" class="alphabet">B</button>
+        <button value="C" class="alphabet">C</button>
+        <button value="D" class="alphabet">D</button>
+        <button value="E" class="alphabet vowel">E</button>
+        <button value="F" class="alphabet">F</button>
+        <button value="G" class="alphabet">G</button>
+        <button value="H" class="alphabet">H</button>
+        <button value="I" class="alphabet vowel">I</button>
+        <button value="J" class="alphabet">J</button>
+        <button value="K" class="alphabet">K</button>
+      </section>
+      <section id="alpha2" class="alpha">
+        <button value="L" class="alphabet">L</button>
+        <button value="M" class="alphabet">M</button>
+        <button value="N" class="alphabet">N</button>
+        <button value="O" class="alphabet vowel">O</button>
+        <button value="P" class="alphabet">P</button>
+        <button value="Q" class="alphabet">Q</button>
+        <button value="R" class="alphabet">R</button>
+        <button value="S" class="alphabet">S</button>
+        <button value="T" class="alphabet">T</button>
+      </section>
+      <section id="alpha3" class="alpha">
+        <button value="U" class="alphabet vowel">U</button>
+        <button value="V" class="alphabet">V</button>
+        <button value="W" class="alphabet">W</button>
+        <button value="X" class="alphabet">X</button>
+        <button value="Y" class="alphabet">Y</button>
+        <button value="Z" class="alphabet">Z</button>
+      </section>
+    </section>
 
-<section id="bankVowel">
-    <div id="bankAccount">
-        <h1 id="bank" style="font-size: xx-large">0</h1>
-    </div>
-    
-    <div id="vowelArea">
-        <select id="vowelSelection">
-            <option value="a">A</option>
-            <option value="e">E</option>
-            <option value="i">I</option>
-            <option value="o">O</option>
-            <option value="u">U</option>
-            <input type="submit" value="Buy A Vowel" id="vowelBuyBtn">
-        </select>
-    </div>
-</section>
+    <section id="bankVowel">
+      <div id="bank">
+        <h1 id="bankAccount" style="font-size: xx-large">0</h1>
+      </div>
+    </section>
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="/js"></script>
-<!-- <script src="/client/index.js"></script> -->
-</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js"></script>
+    <!-- <script src="/client/index.js"></script> -->
+  </body>
 </html>
-
